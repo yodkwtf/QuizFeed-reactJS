@@ -160,6 +160,7 @@ Quiz
   border-radius: var(--radius);
   padding: 3rem;
   align-items: center;
+  place-items: center;
 }
 .quiz h4 {
   text-align: center;
@@ -361,7 +362,7 @@ Navbar
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 2rem 0.4rem;
+  padding: 2rem 0.4rem 1rem;
   text-align: center;
   position: relative;
   width: 90vw;

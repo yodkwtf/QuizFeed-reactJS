@@ -50,32 +50,34 @@ function App() {
             </button>
           </div>
         </nav>
-        <section className="quiz">
-          <div className="quiz-header">
-            <h4>category: {quiz.category}</h4>
-            <p className="correct-answers">
-              correct answers : {correct} / {index}
-            </p>
-          </div>
-          <article className="container">
-            <h3 dangerouslySetInnerHTML={{ __html: question }} />
-            <div className="btn-container">
-              {answers.map((answer, index) => {
-                return (
-                  <button
-                    className="answer-btn"
-                    key={index}
-                    onClick={() => checkAnswer(correct_answer === answer)}
-                    dangerouslySetInnerHTML={{ __html: answer }}
-                  />
-                );
-              })}
+        <div>
+          <section className="quiz">
+            <div className="quiz-header">
+              <h4>category: {quiz.category}</h4>
+              <p className="correct-answers">
+                correct answers : {correct} / {index}
+              </p>
             </div>
-          </article>
-          <button className="next-question" onClick={nextQuestion}>
-            next question
-          </button>
-        </section>
+            <article className="container">
+              <h3 dangerouslySetInnerHTML={{ __html: question }} />
+              <div className="btn-container">
+                {answers.map((answer, index) => {
+                  return (
+                    <button
+                      className="answer-btn"
+                      key={index}
+                      onClick={() => checkAnswer(correct_answer === answer)}
+                      dangerouslySetInnerHTML={{ __html: answer }}
+                    />
+                  );
+                })}
+              </div>
+            </article>
+            <button className="next-question" onClick={nextQuestion}>
+              next question
+            </button>
+          </section>
+        </div>
         <Footer />
       </div>
     </main>
