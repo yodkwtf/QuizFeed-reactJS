@@ -50,7 +50,7 @@ function App() {
             </button>
           </div>
         </nav>
-        <div>
+        <div id="quiz-container">
           <section className="quiz">
             <div className="quiz-header">
               <h4>category: {quiz.category}</h4>

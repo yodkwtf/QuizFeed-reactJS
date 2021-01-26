@@ -24,7 +24,7 @@ const SetupForm = () => {
           </button>
         </div>
       </nav>
-      <div>
+      <div id="quiz-container">
         <section className="quiz quiz-small">
           <form className="setup-form">
             <h3>Select your favourite categories</h3>
